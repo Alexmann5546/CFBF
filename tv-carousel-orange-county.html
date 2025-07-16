@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TV Highlights Carousel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    .carousel-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .swiper {
+      width: 100%;
+      padding-bottom: 2rem;
+    }
+    .swiper-slide {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .swiper-slide img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .swiper-slide h3 {
+      font-size: 1rem;
+      margin: 0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="carousel-title">🍊 Orange County TV Highlights</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="https://youtu.be/AR-Y-0NTfz4" target="_blank">
+          <img src="https://img.youtube.com/vi/AR-Y-0NTfz4/hqdefault.jpg" alt="Orange County">
+          <h3>Orange County (Full Episode)</h3>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://youtu.be/GEu1-ihz-Yc" target="_blank">
+          <img src="https://img.youtube.com/vi/GEu1-ihz-Yc/hqdefault.jpg" alt="Tanaka Farms">
+          <h3>Tanaka Farms</h3>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://youtu.be/SsOINfBaMv8" target="_blank">
+          <img src="https://img.youtube.com/vi/SsOINfBaMv8/hqdefault.jpg" alt="OC Food Hall">
+          <h3>OC’s Original Food Hall</h3>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://youtu.be/SPbPZ9GF24Y" target="_blank">
+          <img src="https://img.youtube.com/vi/SPbPZ9GF24Y/hqdefault.jpg" alt="Knott's Berry Farm">
+          <h3>Knott’s Berry Farm</h3>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://youtu.be/SsN2y99cImA" target="_blank">
+          <img src="https://img.youtube.com/vi/SsN2y99cImA/hqdefault.jpg" alt="Mrs. Knott’s Chicken">
+          <h3>Mrs. Knott’s Fried Chicken</h3>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://youtu.be/OWOPOHC-urg" target="_blank">
+          <img src="https://img.youtube.com/vi/OWOPOHC-urg/hqdefault.jpg" alt="Farmhouse at Rogers Gardens">
+          <h3>Farmhouse at Rogers Gardens</h3>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://youtu.be/a8v-bFKX0T8" target="_blank">
+          <img src="https://img.youtube.com/vi/a8v-bFKX0T8/hqdefault.jpg" alt="Disney Food & Wine">
+          <h3>Disney California Adventure: Food & Wine Fest</h3>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://www.youtube.com/watch?v=_EC_PSjETs4" target="_blank">
+          <img src="https://img.youtube.com/vi/_EC_PSjETs4/hqdefault.jpg" alt="Holiday Dessert Demo">
+          <h3>Disney Holiday Dessert Demo</h3>
+        </a>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.swiper', {
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+  </script>
+</body>
+</html>
